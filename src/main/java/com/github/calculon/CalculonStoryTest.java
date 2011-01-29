@@ -8,7 +8,7 @@ import com.github.calculon.assertion.CalculonAssertions;
 import com.github.calculon.story.StoryTestActivityStack;
 
 public abstract class CalculonStoryTest<ActivityT extends Activity> extends
-        ActivityInstrumentationTestCase2<ActivityT> {
+        ActivityInstrumentationTestCase2<ActivityT> implements CalculonTestCase {
 
     private Class<ActivityT> mActivityClass = null;
     private StoryTestActivityStack activityStack = null;
